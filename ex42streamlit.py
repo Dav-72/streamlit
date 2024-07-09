@@ -77,10 +77,10 @@ with open(image_path, 'rb') as img_file:
 		new_gps_alt = gps_alt = img.get('gps_altitude')
 
 
-st.title("La photos et ses données EXIF")
+st.title("La photo et ses données EXIF")
 
 ## affichage image sur la page
-st.image(image_path, caption='Ulysse')
+st.image(image_path, caption='Photo')
 
 ## affichage des tags et input pour modification
 for tag in EXIF_TAGS.keys():
